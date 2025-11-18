@@ -111,6 +111,15 @@ public class Main {
                         out.println("ERROR");
                     }
                     break;
+                case "SETPIN":
+                    try{
+                        int nuovo_pin = Integer.parseInt(comando[2]);
+                        pin = nuovo_pin;
+                    }
+                    catch(Exception e){
+                        out.println("ERROR");
+                    }
+                    break;
                 default:
                     out.println("ERROR");
                     break;
